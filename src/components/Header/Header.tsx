@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from "./Header.module.sass"
 import {CONTACTS} from "../../utils/constants";
+import logo from "../../../public/log.png";
 
 const Header = (): JSX.Element => {
     const underline = (
@@ -13,7 +14,7 @@ const Header = (): JSX.Element => {
     return (
         <header>
             <nav className={styles.header}>
-                <img src="/public/log.png" alt="logo"/>
+                <img src={logo} alt="logo"/>
 
                 <div className={styles.header__contacts}>
                     <p className={styles.header__phone}>{CONTACTS.tel}</p>

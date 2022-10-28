@@ -1,29 +1,31 @@
 import React, {useState} from 'react';
 import styles from "./Schema.module.sass";
+import opener from "../../../public/opener.png";
+import material from "../../../public/material.png";
 
 const details = [
     {
-        src: "/material.png",
+        src: material,
         text: "Изготовлена из латунного сплава ЛС59-1",
         title: "Высокое качество материалов",
     },
     {
-        src: "/material.png",
+        src: material,
         text: "Гарантированное высокое качетсов",
         title: "Высокие стандарты",
     },
     {
-        src: "/material.png",
+        src: material,
         text: "Изготовлена из латунного сплава ЛС59-1",
         title: "Высокое качество материалов",
     },
     {
-        src: "/material.png",
+        src: material,
         text: "Все изделия соответствуют гос требованиям",
         title: "Соответствие ГОСТ",
     },
     {
-        src: "/material.png",
+        src: material,
         text: "Гарантия до 7 лет на все изделия",
         title: "Гарантия",
     },
@@ -40,7 +42,7 @@ const Schema = (): JSX.Element => {
             <h2>Запорная арматура VALFEX</h2>
             <div className={styles.body}>
                 <div className={styles.opener}>
-                    <img src="/opener.png" alt="photo"/>
+                    <img src={opener} alt="photo"/>
                     <div
                         className={active === 1 ? styles.dot + " " + styles.active : styles.dot}
                         style={{

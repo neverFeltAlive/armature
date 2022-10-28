@@ -1,15 +1,16 @@
 import React, {useState} from 'react';
 import styles from "./Slider.module.sass";
+import pic from "../../../public/pic3.png";
 
 const images = [
-    "/pic3.png",
-    "/pic3.png",
-    "/pic3.png",
-    "/pic3.png",
-    "/pic3.png",
-    "/pic3.png",
-    "/pic3.png",
-    "/pic3.png",
+    pic,
+    pic,
+    pic,
+    pic,
+    pic,
+    pic,
+    pic,
+    pic,
 ]
 
 const Slider = (): JSX.Element => {

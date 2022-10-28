@@ -1,5 +1,8 @@
 import React from 'react';
 import styles from "./About.module.sass";
+import one from "../../../public/1.png";
+import truck from "../../../public/truck.png";
+import global from "../../../public/global.png";
 
 //region Type
 type FeatureProps = {
@@ -19,15 +22,15 @@ type TextFeatureProps = FeatureProps & {
 //region Data
 const iconFeatures = [
     {
-        src: "/1.png",
+        src: one,
         text: "Лидер на рынке запорной арматуры",
     },
     {
-        src: "truck.png",
+        src: truck,
         text: "Удобное логистическое расположение",
     },
     {
-        src: "global.png",
+        src: global,
         text: "Широкая география продаж",
     },
 ]

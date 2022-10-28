@@ -1,6 +1,10 @@
 import React from 'react';
 import styles from "./Menu.module.sass";
-
+import picOne from "../../../public/pic1.png";
+import picTwo from "../../../public/pic2.png";
+import armOne from "../../../public/arm1.png";
+import armTwo from "../../../public/arm2.png";
+import armThree from "../../../public/arm3.png";
 //region Types
 type MenuNavItemProps = {
     src: string
@@ -23,50 +27,50 @@ type MenuItemProps = {
 //region Data
 const menuItems = [
     {
-        src: "/pic1.png",
+        src: picOne,
         text: "Кран шаровой, ручка-бабочка, BP/BP"
     },
     {
-        src: "/pic1.png",
+        src: picOne,
         text: "Кран шаровой, ручка-бабочка, BP/HP"
     },
     {
-        src: "/pic1.png",
+        src: picOne,
         text: "Кран шаровой, ручка-бабочка, HP/HP"
     },
     {
-        src: "/pic1.png",
+        src: picOne,
         text: "Кран шаровой с американкой, ручка-рычаг, BP/HP"
     },
     {
-        src: "/pic2.png",
+        src: picTwo,
         text: "Кран шаровой, ручка-рычаг, BP/BP"
     },
     {
-        src: "/pic2.png",
+        src: picTwo,
         text: "Кран шаровой, ручка-рычаг, BH/HP"
     },
     {
-        src: "/pic2.png",
+        src: picTwo,
         text: "Кран шаровой, ручка-рычаг, HP/HP"
     },
     {
-        src: "/pic2.png",
+        src: picTwo,
         text: "Кран шаровой с американкой, ручка-бабочка, BP/BP"
     }
 ];
 
 const navItems = [
     {
-        src: "/arm1.png",
+        src: armOne,
         text: "Запорная арматура для воды"
     },
     {
-        src: "/arm2.png",
+        src: armTwo,
         text: "Запорная арматура для газа"
     },
     {
-        src: "/arm1.png",
+        src: armThree,
         text: "Закладные детали и компл."
     },
 ]
