@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from "./Header.module.sass"
 import {CONTACTS} from "../../utils/constants";
-import logo from "../../../public/log.png";
+import logo from "../../static/images/log.png";
 
 const Header = (): JSX.Element => {
     const underline = (

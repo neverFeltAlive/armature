@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from "./Menu.module.sass";
-import picOne from "../../../public/pic1.png";
-import picTwo from "../../../public/pic2.png";
-import armOne from "../../../public/arm1.png";
-import armTwo from "../../../public/arm2.png";
-import armThree from "../../../public/arm3.png";
+import picOne from "../../static/images/pic1.png";
+import picTwo from "../../static/images/pic2.png";
+import armOne from "../../static/images/arm1.png";
+import armTwo from "../../static/images/arm2.png";
+import armThree from "../../static/images/arm3.png";
 //region Types
 type MenuNavItemProps = {
     src: string

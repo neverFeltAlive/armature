@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "./Footer.module.sass";
-import logo from "../../../public/log2.png";
+import logo from "../../static/images/log2.png";
 
 const Footer = (): JSX.Element => {
     return (

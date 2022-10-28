@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import styles from "./Schema.module.sass";
-import opener from "../../../public/opener.png";
-import material from "../../../public/material.png";
+import opener from "../../static/images/opener.png";
+import material from "../../static/images/material.png";
 
 const details = [
     {

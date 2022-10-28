@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from "./About.module.sass";
-import one from "../../../public/1.png";
-import truck from "../../../public/truck.png";
-import global from "../../../public/global.png";
+import one from "../../static/images/1.png";
+import truck from "../../static/images/truck.png";
+import global from "../../static/images/global.png";
 
 //region Type
 type FeatureProps = {
