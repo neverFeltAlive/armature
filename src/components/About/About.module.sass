@@ -1,0 +1,50 @@
+@import '../../utils/cssvars'
+@import '../../utils/mixins'
+
+.about
+  margin: auto
+  padding: 20px
+
+  h2
+    font-size: 28px
+    font-weight: 800
+
+  p
+    text-align: left
+    color: gray
+
+  @include sm
+  @include md
+  @include lg
+  @include xl
+
+.featureBar
+  display: block
+
+  @media (min-width: $screen-md-min)
+    display: flex
+    align-items: start
+    justify-content: space-evenly
+
+.feature
+  width: 200px
+  text-align: center
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  margin: 10px auto
+
+  @media (min-width: $screen-md-min)
+    margin: 40px 0
+
+  p
+    text-align: center
+    margin: 0
+
+  h3
+    color: $red
+    height: 62px
+    font-weight: 700
+    font-size: 36px
+    margin: 0

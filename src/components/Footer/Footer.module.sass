@@ -1,0 +1,58 @@
+@import '../../utils/cssvars'
+@import '../../utils/mixins'
+
+.footer
+  background-color: $red
+  margin: 0
+
+  nav
+    text-align: left
+    width: 70%
+    margin: auto
+    padding: 40px 20px 0 20px
+    display: flex
+    flex-direction: column
+
+    @media (min-width: $screen-md-min)
+      width: 100%
+      display: block
+
+    a
+      text-decoration: none
+      color: white
+      font-weight: 700
+      margin: 10px 30px 10px 0
+
+    @include sm
+    @include md
+    @include lg
+    @include xl
+
+.footer__info
+  color: white
+  text-align: center
+  margin: auto
+  padding: 30px
+
+  @media (min-width: $screen-md-min)
+    padding: 20px 0 40px 0
+    display: flex
+    align-items: center
+
+  img
+    display: block
+
+    @media (min-width: $screen-md-min)
+      display: inline-block
+      margin-right: 10px
+
+  p
+    text-align: left
+
+    @media (min-width: $screen-md-min)
+      width: 50%
+
+  @include sm
+  @include md
+  @include lg
+  @include xl

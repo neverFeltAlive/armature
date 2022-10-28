@@ -1,0 +1,60 @@
+@import '../../utils/cssvars'
+@import '../../utils/mixins'
+
+.conditions
+  margin: auto
+  padding: 20px
+
+  h2
+    margin: 10px 0
+    font-weight: 800
+    font-size: 30px
+
+  ul
+    list-style: none
+
+  @include sm
+  @include md
+  @include lg
+  @include xl
+
+.conditions__body
+  display: block
+  text-align: left
+
+  ul
+    padding: 0
+
+  @media (min-width: $screen-md-min)
+    display: flex
+
+.item
+  display: flex
+  text-align: left
+  padding: 10px
+
+  p
+    margin: 0
+
+    span
+      color: $red
+      font-size: 40px
+      font-weight: 700
+
+.line
+  margin-right: 10px
+
+  line
+    stroke: $red
+    stroke-width: 3px
+
+button
+  margin-top: 10px
+  background-color: $red
+  color: white
+  border: none
+  font-weight: 700
+  font-size: 16px
+  padding: 10px 20px
+  border-radius: 20px
+  cursor: pointer

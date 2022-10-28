@@ -1,0 +1,76 @@
+@import "../../utils/mixins"
+@import "../../utils/cssvars"
+
+.slider
+  position: relative
+
+  img
+    width: 100%
+    height: 200px
+
+    @media (min-width: $screen-md-min)
+      height: 300px
+    @media (min-width: $screen-lg-min)
+      height: auto
+
+.triangle
+  position: absolute
+  top: 0
+  left: 50%
+  transform: rotate(180deg) translate(50%)
+  display: none
+
+  @media (min-width: $screen-md-min)
+    display: block
+
+  polygon
+    fill: white
+
+.headers
+  padding: 20px
+  background-color: $gray
+
+  @media (min-width: $screen-md-min)
+    padding: 0
+    color: white
+    top: 20%
+    left: 50%
+    position: absolute
+    transform: translate(-50%)
+    background-color: transparent
+
+  h2
+    text-align: center
+    margin: 0
+    font-weight: 700
+    font-size: 20px
+    z-index: 100
+    @media (min-width: $screen-md-min)
+      font-size: 37px
+
+  h3
+    margin: 0
+    font-weight: 700
+    font-size: 16px
+    @media (min-width: $screen-md-min)
+      font-size: 22px
+
+
+.menu
+  display: none
+
+  @media (min-width: $screen-lg-min)
+    position: absolute
+    bottom: 7%
+    left: 50%
+    transform: translate(-50%)
+    display: block
+    width: 100%
+
+  .current
+    border: white 2px solid
+
+  img
+    cursor: pointer
+    width: 120px
+    height: 60px

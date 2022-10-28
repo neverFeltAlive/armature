@@ -1,0 +1,23 @@
+@import '../../utils/cssvars'
+@import '../../utils/mixins'
+
+.contacts
+  margin: 60px auto
+
+  h2
+    margin: 0
+    font-weight: 800
+    font-size: 30px
+
+  @include sm
+  @include md
+  @include lg
+  @include xl
+
+
+.featureBar
+  @media (min-width: $screen-md-min)
+    display: flex
+    justify-content: space-evenly
+    align-items: start
+

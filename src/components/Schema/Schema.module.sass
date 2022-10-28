@@ -1,0 +1,117 @@
+@import "../../utils/cssvars"
+@import "../../utils/mixins"
+
+.schema
+  background-image: url("../../../public/back.png")
+  background-size: cover
+  padding: 10px
+
+  h2
+    font-weight: 700
+    font-size: 25px
+
+    @media (min-width: $screen-md-min)
+      font-size: 30px
+    @media (min-width: $screen-lg-min)
+      font-size: 40px
+
+  @media (min-width: $screen-lg-min)
+    padding: 15px
+
+.body
+  @media (min-width: $screen-lg-min)
+    display: flex
+    justify-content: space-evenly
+
+.info
+  color: white
+  text-align: left
+  position: relative
+  margin: auto
+
+  @media (min-width: $screen-md-min)
+    width: 80%
+
+  @media (min-width: $screen-lg-min)
+    width: 30%
+    margin: 0
+
+.info__text
+  @media (min-width: $screen-lg-min)
+    position: absolute
+    bottom: 10%
+
+.info__details
+  position: relative
+  display: none
+
+  @media (min-width: $screen-md-min)
+    display: inline-block
+
+  @media (min-width: $screen-lg-min)
+    left: -30%
+
+  div
+    position: absolute
+    top: 10%
+    left: 90%
+    width: 250px
+
+    p
+      margin: 0
+      font-weight: 600
+
+    button
+      background-color: $blue
+      border-radius: 5px
+      padding: 5px 10px
+      outline: none
+      border: none
+
+.opener
+  position: relative
+  display: none
+
+  img
+    width: 300px
+
+    @media (min-width: $screen-lg-min)
+      width: 400px
+
+  @media (min-width: $screen-md-min)
+    display: inline-block
+
+.dot
+  position: absolute
+  padding: 4px
+  margin: 0
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: $red
+  border: 3px solid white
+  border-radius: 50%
+
+.dot__text
+  margin: 0
+  padding: 0
+  width: 30px
+  height: 30px
+  border: 2px dashed white
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  color: white
+  font-weight: 700
+  font-size: 20px
+
+.dot__description
+  color: white
+  margin: 0
+  padding: 0
+  width: 200px
+
+.active
+  border: 3px solid $red
+  border-radius: 10px

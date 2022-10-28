@@ -1,0 +1,69 @@
+@import "../../utils/mixins"
+@import "../../utils/cssvars"
+
+.header
+  padding: 20px
+  max-width: 100%
+  margin: auto
+
+  @include sm
+  @include md
+  @include lg
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+  @include xl
+
+.header__contacts
+  text-align: left
+  margin-top: 20px
+
+  @media (min-width: $screen-lg-min)
+    width: 30%
+    margin-top: 0
+
+.header__phone
+  font-weight: 800
+  font-size: 20px
+  margin: 0
+
+.header__email
+  margin: 0
+
+.navbar__container
+  background-color: $gray
+  padding: 10px
+
+.navbar
+  width: 100%
+  margin: auto
+
+  ul
+    list-style: none
+    text-align: left
+
+    li
+      margin: 30px 20px
+      cursor: pointer
+      display: flex
+      flex-direction: column
+
+      @media (min-width: $screen-lg-min)
+        margin: 0 30px 0 0
+
+      a
+        font-weight: 700
+
+    @media (min-width: $screen-lg-min)
+      display: flex
+
+  @include sm
+  @include md
+  @include lg
+  @include xl
+
+.underline
+  stroke: $red
+  stroke-width: 3px
+

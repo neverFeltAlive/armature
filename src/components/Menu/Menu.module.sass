@@ -1,0 +1,87 @@
+@import "../../utils/cssvars"
+@import "../../utils/mixins"
+
+.menu
+  width: 100%
+  margin: auto
+
+  @include sm
+  @include md
+  @include lg
+  @include xl
+
+.menu__body
+  display: grid
+  grid-template-columns: 100%
+
+  @media (min-width: $screen-md-min)
+    grid-template-columns: 50% 50%
+  @media (min-width: $screen-lg-min)
+    grid-template-columns: 33% 33% 33%
+  @media (min-width: $screen-xl-min)
+    grid-template-columns: 25% 25% 25% 25%
+
+.menu__item
+  padding: 10px
+  text-align: left
+  margin: 20px auto
+
+  @media (min-width: $screen-md-min)
+    margin: 50px auto
+
+  h6
+    margin: 0
+    width: 240px
+    font-weight: 400
+    font-size: 16px
+
+.nav
+
+  color: white
+  width: 100%
+
+  @media (min-width: $screen-md-min)
+    display: flex
+    align-items: center
+
+.nav__item
+  padding: 10px 20px
+  background-color: $red
+  margin: 0
+  cursor: pointer
+  border-bottom: 1px solid $gray
+
+  @media (min-width: $screen-md-min)
+    width: 30%
+    padding: 10px 40px
+    display: flex
+    justify-content: center
+    align-items: center
+    border: none
+
+  &:hover
+    background-color: $dark-red
+
+  img
+    margin-right: 20px
+    width: 39px
+    height: 39px
+    display: none
+
+    @media (min-width: $screen-md-min)
+      display: block
+
+  h3
+    font-weight: 400
+    font-size: 18px
+
+.selected
+  background-color: $dark-red
+
+.left
+  @media (min-width: $screen-md-min)
+    border-bottom-left-radius: 80px
+
+.right
+  @media (min-width: $screen-md-min)
+    border-bottom-right-radius: 80px
